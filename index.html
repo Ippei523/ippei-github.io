@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pei's Portfolio</title>
+  <link rel='stylesheet' type = "text/css" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/8bb38215b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__bg">
+      <div class="header__cat">
+        <div class="header__title">
+          <h1>Ippei's portfolio Site</h1>
+        </div>
+        <div class="header__side">
+          <input type="checkbox" id="slider">
+          <label for="slider">➤</label>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="#profile">PROFILR</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#skill">SKILL</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#experience">EXPERIENCE</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="header__navi">
+          <ul class="header__navi__list">
+            <li class="header__navi__item">
+              <a href="#profile">Profile</a>
+            </li>
+            <li class="header__navi__item">
+              <a href="#skill">Skill</a>
+            </li>
+            <li class="header__navi__item">
+              <a href="#experience">Experience</a>
+            </li>
+            <li class="header__navi__item">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="mainContainer">
+
+      <section class="profile mainContent__cat">
+        <div class="mainContent__inner">
+          <div class="mainContent__title" id="profile">
+            <h2>PROFILE</h2>
+          </div>
+          <div class="profile__content">
+            <div class="profile__img">
+              <img src="img/履歴所ES.jpg">
+            </div>
+            <div class="profile__intro">
+              <h3>Introduce</h3>
+              <p>初めまして、1997年（平成9年）11月11日生まれの清水逸平と申します。実務経験はありませんが、ぜひよろしくお願いします。<br>私がプログラミングを始めようと思ったきっかけは、将来的にフリーランスとして働きたいなと思ったのがきっかけで、現在では、その目標を達成するために日々勉強に取り組んでおります。</p>
+              <p class="sns__con"><i class="fab fa-twitter-square"></i>twitter : <a href="https://twitter.com/ippei_MO10">@ippei__MO10</a> <br>
+                <i class="fab fa-instagram"></i>
+                instagram : <a href="https://instagram.com/ippei_mo10/">@ippei_mo10</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skill mainContent__cat">
+        <div class="mainContent__inner">
+          <div class="mainContent__title" id="skill">
+            <h2>SKILL</h2>
+          </div>
+          <div class="skill__cat">
+            <div class="skill__ability">
+              <h3>コーディング</h3>
+              <div class="skill__contents">
+                <p>HTML</p>
+                <p class="star">★★★★★</p>
+              </div>
+              <div class="skill__contents">
+                <p>CSS</p>
+                <p class="star">★★★★☆</p>
+              </div>
+            </div>
+            <div class="skill__ability">
+              <h3>JavaScript</h3>
+              <div class="skill__contents">
+                <p>JavaScript</p>
+                <p class="star">★★★★☆</p>
+              </div>
+              <div class="skill__contents">
+                <p>jQuery</p>
+                <p class="star">★★★★★</p>
+              </div>
+              <div class="skill__contents">
+                <p>React + Redux</p>
+                <p class="star">★☆☆☆☆</p>
+              </div>
+            </div>
+            <div class="skill__ability">
+              <h3>サーバーサイド言語</h3>
+              <div class="skill__contents">
+                <p>Java</p>
+                <p class="star">★★★★☆</p>
+              </div>
+              <div class="skill__contents">
+                <p>PHP</p>
+                <p class="star">★★★☆☆</p>
+              </div>
+              <div class="skill__contents">
+                <p>Node.js</p>
+                <p class="star">☆☆☆☆☆</p>
+              </div>
+            </div>
+            <div class="skill__ability">
+              <h3>OTHER</h3>
+              <div class="skill__contents">
+                <p>English</p>
+                <p class="star">★★★☆☆</p>
+              </div>
+              <div class="skill__contents">
+                <p>German</p>
+                <p class="star">★☆☆☆☆</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="button">
+            <button id="prevBtn">＜</button>
+            <button id="nextBtn">＞</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience mainContent__cat">
+        <div class="mainContent__inner">
+          <div class="mainContent__title" id="experience">
+            <h2>EXPERIENCE</h2>
+          </div>
+          <ul id="picture__list">
+            <li class="picture__item">
+              <img src="img/2020-06-01 (3).png">
+              <a>作成した一番最初のポートフォリオ</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="mainContent__inner">
+          <div class="mainContent__title" id="contact">
+            <h2>CONTACT</h2>
+          </div>
+          <form>
+            <label for="name">名前.</label>
+            <input type="text" name="name" id="name" >
+            <label for="email">Email.</label>
+            <input type="text" name="email">
+            <label for="textarea">内容.</label>
+            <textarea id="textarea"></textarea>
+            <input type="submit" id="submit" value="SUBMIT">
+          </form>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer_container">
+      <nav class="footer_navi">
+        <a href="#profile">PROFILE<span></span></a>
+        <a href="#skill">SKILL<span></span></a>
+        <a href="#experience">EXPERIENCE<span></span></a>
+        <a href="#contact">CONTACT<span></span></a>
+      </nav>
+      <p>COPYRIGHT©IPPEI SHIMIZU</p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
