@@ -10,15 +10,26 @@ $(function() {
   var current = 1;
   var next = 2;
   var count = $(".skill__ability").length;
-  
+
   $("#nextBtn").click(function() {
     $(".skill__ability:nth-child(" + current + ")").hide();
     $(".skill__ability:nth-child(" + next + ")").show();
     
     current = next;
-    next = next++;
+    next = ++next;
+
     if(next > count) {
-      next = 1;
+      next = count;
+    }
+  });
+  
+  $("#prevBtn").click(function() {
+    next = --current;
+    $(".skill__ability:nth-child(" + current + ")").hide();
+    $(".skill__ability:nth-child(" + next + ")").show();
+    
+    if(next <= 0) {
+      current = 1;
     }
   });
 });
